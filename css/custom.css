@@ -1,0 +1,887 @@
+/* Richard's Custom CSS for bootstrap template */
+
+/* Web Font embeds
+----------------------------------------------------------------------------
+	*/
+/* Ico moon Font
+*/
+@font-face {
+	font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.eot');	
+src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'),
+		 url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
+}
+
+
+/* Webfont: Lato-Medium */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-Medium.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-MediumItalic */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-MediumItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-MediumItalic.ttf') format('truetype'); 
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-Bold.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-BoldItalic */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-BoldItalic.ttf') format('truetype'); 
+    font-style: italic;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Semibold */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-Semibold.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-SemiboldItalic */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-SemiboldItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-SemiboldItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-SemiboldItalic.ttf') format('truetype'); 
+    font-style: italic;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Lato-Heavy */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Heavy.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-Heavy.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-Heavy.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-HeavyItalic */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-HeavyItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-HeavyItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-HeavyItalic.ttf') format('truetype'); 
+    font-style: italic;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Black */@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato/Lato-Black.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato/Lato-Black.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+body {
+	font-family:Lato;
+}
+
+.jumbotron p {
+	font-weight:inherit;
+	text-align:left;
+}
+
+.jumbotron h2 {
+    font-weight:600;
+}
+
+/*
+Navigation logo
+----------------------------------------------------------------------------
+all styles are default for mobile	
+*/
+.navbar {
+
+    float:none;
+    position: absolute;
+    z-index: 10;
+    top:0px;
+    width:100%;
+    margin-bottom:0;
+    
+    opacity:.75;
+    
+    border:0;
+    border-radius: 0;
+
+    
+}
+
+.navbar-inverse {
+    background: #555;
+ }
+
+.navbar h1 {
+    margin:0;
+        
+    
+}
+
+.navbar-inverse .navbar-brand {
+    color:#FFFFFF;
+}
+
+
+.navbar-brand {
+    font-weight:400; 
+}
+
+/*
+Large typography header
+----------------------------------------------------------------------------
+all styles are default for mobile	
+*/
+
+.header-background {
+    position: relative;
+    height:500px;
+	width:100%;
+
+	/*
+	-webkit-box-shadow: inset 0px 0px 23px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    inset 0px 0px 23px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         inset 0px 0px 23px 0px rgba(50, 50, 50, 0.75);
+	*/
+
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.0), 
+	  rgba(0, 0, 0, 0.8)),;
+	
+	background-image: url(../images/college-group.jpg);
+	background-position:bottom;
+	background-size: cover;
+	background-color:#EEEEEE;
+
+	padding-top:50px;
+	padding-bottom:50px;
+    
+}
+
+/* Breaks lines for extra-large */
+.r-break {
+    display:none;
+}
+
+/* main-title holds text */
+.main-title {
+    display:inline-block;
+    margin: 0 auto 0 auto;
+    padding:15px;
+    border:0;
+    
+    position: absolute;
+    bottom:25px;
+    
+    color:white;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
+    
+    line-height:1em;
+    
+    text-align: center;
+
+}
+
+.main-title .extra-large{
+    display:block;
+    margin-bottom:8px;
+
+    font-weight:400;	
+    font-size:3.75rem;
+    letter-spacing:normal;
+    line-height:1em;
+	font-kerning:normal;
+
+}
+
+.extra-large + span {
+    /* border: 1px solid blue; */
+    font-size:2rem;
+    line-height:1.25em;
+}
+
+.main-title .subtext {
+    display:block;
+    
+    margin-top: 3rem;
+    
+    font-size:1.5rem;
+    font-weight:400;
+    line-height:1.5rem;
+    text-align:center;
+}
+
+/* Style for tablets --------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+	.header-background {
+        min-height:750px;
+		position:relative;
+        
+        background-position: bottom;
+	}
+  
+    .r-break {
+    display:block;
+    }
+    
+    .main-title {
+        /* use this for centering absolutely positioned divs*/
+        left: 0;
+        right: 0;
+        bottom:60px;
+    }
+    
+    .main-title .extra-large{
+        margin:0;
+        padding-bottom: 20px;
+        
+        font-size: 8rem;
+        font-weight: 800;
+    }
+
+    .extra-large + span {
+        font-size:3rem;
+
+    }
+    
+    .main-title .subtext {
+        /* max-width:20em;*/
+        overflow: visible;
+        
+        margin-top: 25px;
+        margin-right:auto;
+        margin-left: auto;
+    
+        font-size:2rem;
+        text-align: center;
+        line-height:1em;
+        
+    }
+}
+
+/* Style for in-between tablet and desktop */
+
+@media screen and (min-width:1000px) {
+  
+}
+
+/* Style for desktop, large screens -----------------------------------------*/
+@media screen and (min-width: 1200px){
+    
+    .header-background {
+        min-height:800px;
+        width:100%;
+        
+        background-size: cover;
+        background-position: top;
+        background-color:#EEEEEE;
+        
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+      
+    .r-break {
+    display:none;
+    }
+    
+    .main-title {
+
+        margin-bottom: 0;
+        
+        text-align:center;    
+    }
+
+    .main-title .extra-large{
+
+        
+        font-weight:bold;	
+        font-size: 8rem;
+        text-align: center;
+        letter-spacing:normal;
+        font-kerning:normal;
+        
+        padding-bottom: 0;
+        }
+
+    .extra-large + span {
+        font-size: 5rem;
+    }
+    
+    .main-title .subtext {
+        display:block;
+        max-width:100rem;
+        overflow: visible;
+
+        font-size:2.75rem;
+        font-weight:400;
+        text-align: center;
+        line-height:1em;
+        
+        
+    }
+}
+
+.marketing {
+    margin-top: 50px;
+}
+
+/*
+Developing your list
+----------------------------------------------------------------------------
+	*/
+
+.featurette {
+	max-width: 75em;
+	
+}
+
+.featurette h2 {
+	font-size: 50px;
+}
+
+@media screen and (min-width:1200px) {
+    .featurette h2 {
+        font-size: 60px;
+    }
+    
+    .featurette p {
+        font-size:24px;
+    }
+    
+}
+/*
+Building your app. styles
+----------------------------------------------------------------------------
+	*/
+
+.building-application {
+	font-size:22px;
+}
+
+.building-application h1 {
+    margin-top:0;
+}
+
+.building-application row{
+	font-size:inherit;
+}
+
+.building-application h2{
+    text-align: center
+}
+
+.building-application .text-muted, .featurette .text-muted {
+	font-weight:400;
+	color:#7C0085;
+}
+
+.building-application .col-sm-4 {
+	margin-bottom:1em;
+    
+    text-align:center;
+	text-align:left;
+	font-size: inherit;
+    
+}
+
+.building-application .col-sm-4:last-of-type {
+    margin-bottom:0;
+    /* keeps the last margin from making extra space */
+}
+
+
+.building-application p{
+    font-size:16px;
+}
+
+/* List styles */
+.jumbotron .col-sm-4 p, ul{
+	margin-bottom:.5em;
+    
+
+}
+
+.building-application ul {
+    padding-left:1em;
+    font-size:inherit;
+
+}
+
+.building-application li {
+	font-size:inherit;
+
+}
+
+.jumbotron li{
+    font-size:16px;
+}
+
+
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+	
+    .jumbotron h1 {
+		font-size: 50px;
+	}
+	
+    .jumbotron>h1 {
+	margin-top:0 ;
+	margin-bottom:.5em;
+    }
+
+    .building-application p{
+        font-size: 16px;
+    }
+    
+    .building-application li{
+        font-size:16px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    
+	.building-application h1{
+		font-size:60px;
+	}
+	
+    .building-application p, .building-application li{
+        font-size:20px;
+    }
+    
+    
+    
+}
+
+
+/*
+Other text styles 
+----------------------------------------------------------------------------
+	*/
+
+#mastercontainer {
+	/* margin-top: 100px;
+	*/
+}
+
+.color-em {
+	color:#B50535;
+}
+	
+	
+h2, .featurette-heading{
+	font-weight:400;
+}
+
+
+
+/* Contact card information
+----------------------------------------------------------------------------
+	*/
+
+.vcard-container {
+
+
+}
+
+.vcard{
+    position:relative;
+    
+    font-size:24px;
+
+    background-repeat: repeat;
+    /* background-image: url(../images/bg-noise.png); */
+    
+}
+
+.contact-info {
+    margin:0;
+}
+
+.col1 {
+    margin-bottom:.25em;
+}
+
+.col2 dd, .col2 div{
+    margin:0;
+    padding:0;
+    /* line-height: 1.25em; */
+}
+
+.col2 dd{
+    display:inline-block;
+}
+
+/* contact card font size, typography */
+.col1 {
+    font-size:28px;
+    
+}
+
+.col2 {
+    font-size:16px;
+    
+    text-align:left;
+}
+
+    .col2 dl {
+        width:100%;
+        display:inline;
+    }
+
+/* prevent the icon from being underlined */
+a:hover:before {
+    text-decoration: none !important;
+}
+
+
+/* Media query: only applies when the min width is 768px */
+
+@media (min-width:768px) {
+    .col1{
+        display:inline-block;
+        
+        margin:0;
+        padding:0;
+        margin-left:auto;
+        
+        font-size:38px;
+		font-weight: 400;
+        text-align: left;
+        line-height:1em;
+    }
+    
+    .col1 .name .name-break {
+        display:inline;
+        padding:0;
+        margin:0;
+    }
+    
+	/* contact info stored in this */
+    .col2 {
+		
+		margin-top:5px;
+        display: inline-block;
+		
+		font-size: 26px;
+    }
+    
+}
+
+/* Styles for desktop*/
+@media screen and (min-width:1200px) {
+
+	.img-peggy {
+		width:100% !important;
+	}
+
+    .col1{
+        display:inline-block;
+        
+        margin:0;
+        padding:0;
+        margin-left:auto;
+        
+        font-size:36px;
+		font-weight: 400;
+        text-align: left;
+        line-height:1em;
+    }
+    
+    .col1 .name .name-break {
+        display:inline;
+        padding:0;
+        margin:0;
+    }
+    
+	/* contact info stored in this */
+    .col2 {
+		font-size: 20px !important;
+    }
+    
+
+    
+}
+
+
+/* Icomoon stuff
+---------------------------------------------------------------------------- */
+
+/* Hide icons in mobile view */
+.vcard .icon:before {
+	font-family: 'icomoon';
+	speak: none;
+    font-size:.8em;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+    margin-right: .25em;
+    
+    display: inline;
+	
+    /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+	content: "\e603";
+}
+.icon-phone:before {
+	content: "\e600";
+}
+.icon-mobile:before {
+	content: "\e601";
+}
+.icon-linkedin:before {
+	content: "\e602";
+}
+
+/* Testimonials section
+----------------------------------------------------------------------------
+	*/
+
+.testimonials {
+    margin-bottom:1em;
+}
+
+.testimonials blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  font-size: 6em;
+
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.testimonials blockquote:after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .testimonials {
+        margin-top: 40px;
+    }
+    
+    .testimonials p {
+        text-align:center;
+    }
+    
+    .testimonials  h4{
+        font-size:16px;
+        font-style: italic;
+    }
+    
+}
+
+
+/* Bio information
+----------------------------------------------------------------------------
+	*/
+
+.bio {
+    width:100%;
+    margin-left: 0;
+    margin-right:0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top:0;
+    padding-bottom: 30px;
+    
+}
+
+
+.bio p{        
+    text-align: left;
+    
+    font-size:14px;
+}
+
+.bio .row {
+    margin-left:0;
+    margin-right:0;
+}
+
+.bio .bio-info {
+    padding:0;
+}
+
+.img-peggy {
+    padding:15px;
+}
+
+
+/* Tablets, landscape*/
+@media screen and (min-width:768px) {
+    .bio {
+        width:100%;
+        margin-left: 0;
+        margin-right:0;
+        padding: 3em;
+        
+        font-size:18px;
+        
+    }
+	
+	.bio .bio-desc {
+		padding-left:50px;
+	}
+  
+	.img-peggy {
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+    padding-bottom: 20px;
+	}
+	
+    .bio .col-md-8 {
+        padding-right: 0;
+        
+        font-size:inherit;
+        
+    }
+    
+    .bio .bio-text {
+		max-width:460px;
+	 
+        margin-left:auto;
+		margin-right:0;
+        
+        
+        font-size:inherit;
+        font-weight: 400;
+    }
+    
+    .bio p {
+        font-size:inherit;
+        text-align: left;
+
+    }
+    
+    .bio-text p:first-of-type{
+        font-size: 24px;
+        font-weight:100;
+        
+        line-height:28px; 
+
+        text-align: left;
+    }
+
+ 
+    
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .img-peggy:50%;
+}
+
+@media screen and (min-width:768px) {
+	.img-peggy {
+		width:100%;
+	}
+	
+	.vcard-container {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	
+		max-width:380px;
+	}
+	
+	.col2 {
+		font-size: 16px;
+	}
+	
+	.bio-text {
+		margin-left:auto !important;
+		margin-right:auto !important;
+	}
+	
+}
+
+
+@media screen and (min-width:1200px) {
+
+/* Lead paragraph style */
+    .bio p:first-of-type{
+        font-size:28px;
+        line-height:1.1em;
+        
+        text-align: left;
+    }    
+    
+/* Control characters per line*/
+    .bio .bio-text {
+        max-width:32em;
+
+    }
+    
+}
+
+/* Other
+----------------------------------------------------------------------------
+	*/
+
+.hr-silent {
+	border:0;
+}
+
+.featurette-divider {
+	margin:40px;
+}
+
+body{
+	background:#FFF7F7;
+}

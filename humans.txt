@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Richard Le -- Web design, coding, deployment -- @rltherichman
+  Peggy Schmidt -- Writing
+
+# THANKS
+
+  Peggy Schmidt, for all her kindness! :)
+  
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JavaScript, Bootstrap, Brackets.io, Grunt, npm
