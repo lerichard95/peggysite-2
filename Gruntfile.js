@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                 src: [
                     'js/jquery-2.1.1.js', 'js/scrollReveal.js', 'js/*.js', 'js/custom.js'
                 ],
-                dest: 'build/js/production.js',
+                dest: 'js/production.js',
             },
 
             css: {
@@ -18,13 +18,13 @@ module.exports = function (grunt) {
                     'css/bootstrap.css', 'css/carousel.css',
                     'css/custom.css'
                 ],
-                dest: 'build/css/production.css'
+                dest: 'css/production.css'
             },
         },
 
         uglify: {
             build: {
-                src: 'build/js/production.js',
+                src: 'js/production.js',
                 dest: 'build/js/production.min.js'
             }
         },
@@ -41,12 +41,10 @@ module.exports = function (grunt) {
         },
         
         cssmin: {            
-            target: {
-                css: {
-                    src: 'build/css/production.css',
+                minify: {
+                    src: 'css/production.css',
                     dest: 'build/css/production.min.css'
                 }
-            }
         },
         
         processhtml: {
